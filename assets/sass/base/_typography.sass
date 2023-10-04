@@ -9,3 +9,35 @@ body
   -moz-osx-font-smoothing: grayscale
   -webkit-backface-visibility: hidden
   -webkit-tap-highlight-color: transparent
+
+
+// headings
+
+h1,
+.h1
+  +responsive-font(97, 48)
+
+h2
+.h2
+  +responsive-font(60, 30)
+
+// other
+
+p
+  +responsive-font(60, 30)
+
+a
+  +responsive-font(30, 12)
+  transition: 0.2s ease
+
+  &:link,
+  &:active,
+  &:visited
+    color: $color-dark
+
+  &:hover
+    color: rgba($color-dark, 0.6)
+
+.menu-item a
+  &:hover
+    color: rgba($color-dark, 0.6)

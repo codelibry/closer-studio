@@ -1,10 +1,4 @@
-    <footer id="footer" class="footer">
-      <div class="footer__container">
-        <nav class="footer__menu">
-            <?php wp_nav_menu(array('theme_location' => 'closer-studio-secondary-menu')); ?>
-        </nav>
-      </div>
-    </footer>
+      <?php get_template_part('template-parts/footer'); ?>
 
     </div> <!-- THE END OF WRAPPER -->
 
