@@ -1,5 +1,12 @@
+body{font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
+@font-face{font-family:"Gascogne-Regular";font-style:normal;font-weight:300;src:url("../assets/fonts/Gascogne-Regular.ttf") format("truetype")}
+@font-face{font-family:"TradeGothic";font-style:normal;font-weight:300;src:url("../assets/fonts/TradeGothic-LT-Regular.ttf") format("truetype")}
+body{font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
-[class*="__container"]{margin:0 auto;padding:0 15px;max-width:66.6666666667rem}
+[class*="__container"]{margin:0 auto;padding:0 .8333333333rem;max-width:66.6666666667rem}
 .wrapper{position:relative;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;min-height:100%}
-.header{padding:2rem 0;background-color:#333;color:#fff}
-.footer{padding:2rem 0;background-color:#000;color:#333}
+@media(min-width:767px){body{font-size:calc(30px + 30 * (100vw / 1920))}
+body{font-size:calc(30px + 30 * (100vw / 1920))}
+}@media(max-width:767px){body{font-size:calc(30px + 51 * ((100vw - 320px) / 1920))}
+body{font-size:calc(30px + 51 * ((100vw - 320px) / 1920))}
+}
