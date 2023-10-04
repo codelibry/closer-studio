@@ -1,1 +1,16 @@
-.header
+.header 
+  background-color: $color-grey
+  position: relative
+  height: rem(96px)
+  padding: 0 rem(17px) 
+
+  &__container
+    height: 100% 
+    display: flex
+    align-items: center
+
+  &__col
+    flex: 1 1 33.333%
+
+  &__logo
+    +responsive-font(62, 32)

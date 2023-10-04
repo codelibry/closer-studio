@@ -1,12 +1,16 @@
 <?php
 
-function closer_studio_config(){
-  register_nav_menus(
-    array(
-      'closer-studio-main-menu' => 'Closer Studio Main Menu',
-      'closer-studio-secondary-menu' => 'Closer Studio Secondary Menu',
-    )
-  );
-}
+/* REGISTER NAV MENUS */
 
-add_action( 'after_setup_theme', 'closer_studio_config', 0 );
+if ( ! function_exists( 'closer_studio_register_nav_menu' ) ) {
+
+	function closer_studio_register_nav_menu(){
+		register_nav_menus( array(
+	    	'primary_menu' => __( 'Primary Menu', 'closer-studio' ),
+	    	'footer_menu'  => __( 'Footer Menu', 'closer-studio' ),
+		) );
+	}
+
+	add_action( 'after_setup_theme', 'closer_studio_register_nav_menu', 0 );
+
+}

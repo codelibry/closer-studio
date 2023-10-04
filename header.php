@@ -9,10 +9,4 @@
 
 <div class="wrapper">
 
-  <header id="header" class="header">
-    <div class="header__container">
-      <nav class="header__menu">
-        <?php wp_nav_menu(array('theme_location' => 'closer-studio-main-menu')); ?>
-      </nav>
-    </div>
-  </header>
+<?php get_template_part('template-parts/header'); ?>
