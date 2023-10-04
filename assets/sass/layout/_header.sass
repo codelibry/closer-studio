@@ -2,7 +2,16 @@
   background-color: $color-grey
   position: relative
   height: rem(96px)
-  padding: 0 rem(17px) 
+  padding: rem(17px) 0
+
+  &__menu
+    +max-screen($breakpoint-lg)
+      display: none
+
+  &__mobile-menu
+    display: none
+    +max-screen($breakpoint-lg)
+      display: block
 
   &__container
     height: 100% 
@@ -12,5 +21,27 @@
   &__col
     flex: 1 1 33.333%
 
+    &--2
+      +max-screen($breakpoint-lg)
+        display: none
+
+    &--3
+      +max-screen($breakpoint-lg)
+        flex: 0 1
+
   &__logo
-    +responsive-font(62, 32)
+    +responsive-font(62, 28)
+
+  &__icon
+    display: none
+    flex-direction: column
+    align-items: flex-end
+    gap: rem(8px)
+
+    +max-screen($breakpoint-lg)
+      display: flex
+
+    div
+      background-color: $color-dark
+      width: rem(40px)
+      height: rem(6px)
