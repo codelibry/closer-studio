@@ -21,14 +21,13 @@ html{scroll-behavior:smooth}
 [class*="__container"]{margin:0 auto;padding:0 .8333333333rem;max-width:100.555555556rem}
 .wrapper{position:relative;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;min-height:100%}
 .header{background-color:#faf9f6;position:relative;height:5.3333333333rem;padding:.9444444444rem 0}
-.header__mobile-menu{display:none}
 .header__container{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .header__col{-webkit-box-flex:1;-ms-flex:1 1 33.333%;flex:1 1 33.333%}
 .header__icon{display:none;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;gap:.4444444444rem}
 .header__icon div{background-color:#000;width:2.2222222222rem;height:.3333333333rem}
 .menu{margin-top:.5555555556rem;height:1.6666666667rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:4.3333333333rem}
 .menu-item a{color:#000;line-height:1.6666666667rem;text-transform:uppercase}
-.mobile-menu{background-color:#faf9f6;position:absolute;z-index:5;top:5.3333333333rem;left:0;width:100%}
+.mobile-menu{display:none;background-color:#faf9f6;position:absolute;z-index:5;top:5.3333333333rem;left:0;width:100%}
 .mobile-menu .menu{height:auto;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;gap:1rem;padding-bottom:1rem}
 .mobile-menu .menu .menu-item li{display:block;width:100vw;border-bottom:1px solid #000}
 .mobile-menu .menu .menu-item a{width:100%;display:block;line-height:1.5}
@@ -37,7 +36,6 @@ body{font-size:calc(30px + 30 * (100vw / 1920))}
 .header__logo{font-size:calc(28px + 34 * (100vw / 1920))}
 .menu{font-size:calc(18px + 8 * (100vw / 1920))}
 }@media only screen and (max-width:991.98px){.header__menu{display:none}
-.header__mobile-menu{display:block}
 .header__col--2{display:none}
 .header__col--3{-webkit-box-flex:0;-ms-flex:0 1;flex:0 1}
 .header__icon{display:-webkit-box;display:-ms-flexbox;display:flex}
