@@ -4,6 +4,8 @@
 
 <?php get_template_part('template-parts/acf-blocks/hero'); ?>
 
+<?php get_template_part('template-parts/acf-blocks/gallery'); ?>
+
 </main>
 
 
