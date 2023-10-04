@@ -1,0 +1,5 @@
+html{scroll-behavior:smooth}
+[class*="__container"]{margin:0 auto;padding:0 15px;max-width:66.6666666667rem}
+.wrapper{position:relative;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;min-height:100%}
+.header{padding:2rem 0;background-color:#333;color:#fff}
+.footer{padding:2rem 0;background-color:#000;color:#333}
