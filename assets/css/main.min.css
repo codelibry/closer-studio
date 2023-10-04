@@ -14,6 +14,7 @@ ul li{list-style:none}
 img{vertical-align:top}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}
 body{font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
+h1,.h1{line-height:1}
 a{-webkit-transition:.2s ease;transition:.2s ease}
 a:link,a:active,a:visited{color:#000}
 a:hover{color:rgba(0,0,0,0.6)}
@@ -21,13 +22,14 @@ a:hover{color:rgba(0,0,0,0.6)}
 @font-face{font-family:"Gascogne-Regular";font-style:normal;font-weight:300;src:url("../fonts/Gascogne-Regular.ttf") format("truetype")}
 @font-face{font-family:"TradeGothic";font-style:normal;font-weight:300;src:url("../fonts/TradeGothic-LT-Regular.ttf") format("truetype")}
 body{font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
+h1,.h1{line-height:1}
 a{-webkit-transition:.2s ease;transition:.2s ease}
 a:link,a:active,a:visited{color:#000}
 a:hover{color:rgba(0,0,0,0.6)}
 .menu-item a:hover{color:rgba(0,0,0,0.6)}
 html{scroll-behavior:smooth;background-color:#faf9f6}
 [class*="__container"]{margin:0 auto;padding:0 .8333333333rem;max-width:100.555555556rem}
-.wrapper{position:relative;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;min-height:100%}
+.wrapper{position:relative;overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:100%}
 .header{background-color:#faf9f6;position:relative;height:5.3333333333rem;padding:.9444444444rem 0}
 .header__container{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .header__col{-webkit-box-flex:1;-ms-flex:1 1 33.333%;flex:1 1 33.333%}
@@ -50,14 +52,18 @@ html{scroll-behavior:smooth;background-color:#faf9f6}
 .mobile-menu .menu .menu-item a{width:100%;display:block;line-height:1.5}
 .field{display:-webkit-box;display:-ms-flexbox;display:flex}
 .field__label{text-transform:uppercase}
-.field__input{width:22.6111111111rem;background-color:transparent;border-bottom:2px solid #000;text-align:center}
+.field__input{max-width:22.6111111111rem;background-color:transparent;border-bottom:2px solid #000;text-align:center}
+.hero{width:100vw;height:35vw;position:relative}
+.hero__image{position:absolute;-o-object-fit:cover;object-fit:cover;width:100%;height:100%}
+.hero__container{height:35vw;position:relative}
+.hero__title{position:absolute;color:#faf9f6;bottom:9%;left:0}
 @media(min-width:767px){body{font-size:calc(30px + 30 * (100vw / 1920))}
-h1,.h1{font-size:calc(48px + 49 * (100vw / 1920))}
+h1,.h1{font-size:calc(32px + 65 * (100vw / 1920))}
 .h2{font-size:calc(30px + 30 * (100vw / 1920))}
 p{font-size:calc(30px + 30 * (100vw / 1920))}
 a{font-size:calc(12px + 18 * (100vw / 1920))}
 body{font-size:calc(30px + 30 * (100vw / 1920))}
-h1,.h1{font-size:calc(48px + 49 * (100vw / 1920))}
+h1,.h1{font-size:calc(32px + 65 * (100vw / 1920))}
 .h2{font-size:calc(30px + 30 * (100vw / 1920))}
 p{font-size:calc(30px + 30 * (100vw / 1920))}
 a{font-size:calc(12px + 18 * (100vw / 1920))}
@@ -70,12 +76,12 @@ a{font-size:calc(12px + 18 * (100vw / 1920))}
 .header__col--3{-webkit-box-flex:0;-ms-flex:0 1;flex:0 1}
 .header__icon{display:-webkit-box;display:-ms-flexbox;display:flex}
 }@media(max-width:767px){body{font-size:calc(30px + 51 * ((100vw - 320px) / 1920))}
-h1,.h1{font-size:calc(48px + 83.3 * ((100vw - 320px) / 1920))}
+h1,.h1{font-size:calc(32px + 110.5 * ((100vw - 320px) / 1920))}
 .h2{font-size:calc(30px + 51 * ((100vw - 320px) / 1920))}
 p{font-size:calc(30px + 51 * ((100vw - 320px) / 1920))}
 a{font-size:calc(12px + 30.6 * ((100vw - 320px) / 1920))}
 body{font-size:calc(30px + 51 * ((100vw - 320px) / 1920))}
-h1,.h1{font-size:calc(48px + 83.3 * ((100vw - 320px) / 1920))}
+h1,.h1{font-size:calc(32px + 110.5 * ((100vw - 320px) / 1920))}
 .h2{font-size:calc(30px + 51 * ((100vw - 320px) / 1920))}
 p{font-size:calc(30px + 51 * ((100vw - 320px) / 1920))}
 a{font-size:calc(12px + 30.6 * ((100vw - 320px) / 1920))}

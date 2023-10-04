@@ -2,11 +2,7 @@
 
 <main class="page">
 
-<section id="section">
-  <div class="section__container">
-    Closer Studio
-  </div>
-</section>
+<?php get_template_part('template-parts/acf-blocks/hero'); ?>
 
 </main>
 
