@@ -1,11 +1,11 @@
 {
     "key": "group_651e7216e7653",
-    "title": "Block: Plain Text",
+    "title": "Block: Content Text",
     "fields": [
         {
             "key": "field_651e721711498",
             "label": "Title",
-            "name": "plain-text-title",
+            "name": "content-text-title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Services",
+            "default_value": "Title",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -25,7 +25,7 @@
         {
             "key": "field_651e723211499",
             "label": "Text",
-            "name": "plain-text-content",
+            "name": "content-text-content",
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
@@ -61,5 +61,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1696496611
+    "modified": 1696498349
 }

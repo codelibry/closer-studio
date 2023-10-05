@@ -22,7 +22,6 @@ a:hover{color:rgba(0,0,0,0.6)}
 .menu-item a:hover{color:rgba(0,0,0,0.6)}
 @font-face{font-family:"Gascogne-Regular";font-style:normal;font-weight:300;src:url("../fonts/Gascogne-Regular.ttf") format("truetype")}
 @font-face{font-family:"TradeGothic";font-style:normal;font-weight:300;src:url("../fonts/TradeGothic-LT-Regular.ttf") format("truetype")}
-.section{padding:2.5rem 0}
 body{font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
 h1,.h1{letter-spacing:2px;line-height:1.1}
 h2,.h2{text-transform:uppercase;margin-bottom:1.2em}
@@ -89,6 +88,7 @@ a{font-size:calc(12px + 18 * (100vw / 1920))}
 .field__label{font-size:calc(16px + 14 * (100vw / 1920))}
 .field__input{font-size:calc(16px + 14 * (100vw / 1920))}
 .shrink-text__link{font-size:calc(14px + 6 * (100vw / 1920))}
+.content-text a{font-size:calc(24px + 36 * (100vw / 1920))}
 }@media only screen and (max-width:991.98px){.header__menu{display:none}
 .header__col--2{display:none}
 .header__col--3{-webkit-box-flex:0;-ms-flex:0 1;flex:0 1}
@@ -116,4 +116,5 @@ a{font-size:calc(12px + 30.6 * ((100vw - 320px) / 1920))}
 .field__label{font-size:calc(16px + 23.8 * ((100vw - 320px) / 1920))}
 .field__input{font-size:calc(16px + 23.8 * ((100vw - 320px) / 1920))}
 .shrink-text__link{font-size:calc(14px + 10.2 * ((100vw - 320px) / 1920))}
+.content-text a{font-size:calc(24px + 61.2 * ((100vw - 320px) / 1920))}
 }
