@@ -1,5 +1,4 @@
 .menu
-  +responsive-font(26, 18)
   margin-top: rem(30px)
   height: rem(30px)
   display: flex
@@ -8,6 +7,7 @@
   gap: rem(78px) 
 
 .menu-item a
-  color: $color-dark
-  line-height: rem(30px)
+  +responsive-font(26, 18)
   text-transform: uppercase
+  line-height: rem(30px)
+  color: $color-dark

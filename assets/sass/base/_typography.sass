@@ -16,18 +16,19 @@ body
 h1,
 .h1
   +responsive-font(97, 32)
-  line-height: 1
+  letter-spacing: 2px
+  line-height: 1.1
 
 h2,
 .h2
-  +responsive-font(60, 30)
+  +responsive-font(60, 24)
   text-transform: uppercase
-  margin-bottom: rem(80px)
+  margin-bottom: 1.2em
 
 // other
 
 p
-  +responsive-font(60, 30)
+  +responsive-font(60, 24)
 
 a
   +responsive-font(30, 12)
@@ -44,3 +45,19 @@ a
 .menu-item a
   &:hover
     color: rgba($color-dark, 0.6)
+
+
+// text sizes
+
+.text-size
+  &-20
+    +responsive-font(20, 12)
+
+  &-26
+    +responsive-font(26, 16)
+
+  &-30
+    +responsive-font(30, 18)
+
+  &-62
+    +responsive-font(62, 32)
