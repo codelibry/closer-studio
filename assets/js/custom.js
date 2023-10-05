@@ -7,3 +7,11 @@ jQuery(function ($) {
     mobileMenuOverlay.slideToggle();
   });
 });
+"use strict";
+
+jQuery(function ($) {
+  $('.text__link').click(function (event) {
+    event.preventDefault();
+    $('.text__full').slideToggle();
+  });
+});
