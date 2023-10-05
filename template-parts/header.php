@@ -2,9 +2,9 @@
   <div class="header__container">
 
     <div class="header__col header__col--1">
-      <div class="header__logo">
+      <a class="header__logo" href="<?php echo get_home_url() ?>">
         Closer Studio
-      </div>
+      </a>
     </div>
 
 
