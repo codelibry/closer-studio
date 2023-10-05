@@ -10,8 +10,10 @@ jQuery(function ($) {
 "use strict";
 
 jQuery(function ($) {
-  $('.shrink-text__link').click(function (event) {
+  var link = $('.shrink-text__link');
+  var dropdown = $('.shrink-text__full');
+  link.click(function (event) {
     event.preventDefault();
-    $('.shrink-text__full').slideToggle();
+    dropdown.slideToggle();
   });
 });

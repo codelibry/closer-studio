@@ -1,6 +1,10 @@
 jQuery(function ($) {
-  $('.shrink-text__link').click(function(event){
+  let link = $('.shrink-text__link');
+  let dropdown = $('.shrink-text__full');
+
+  link.click(function(event){
     event.preventDefault();
-    $('.shrink-text__full').slideToggle();
+
+    dropdown.slideToggle();
   });
 });

@@ -1,5 +1,8 @@
 <?php
   $images = get_sub_field('gallery');
+
+  //print_r($images);
+  
 ?>
 
 <?php if (count($images)): ?>
@@ -12,7 +15,12 @@
       <?php foreach( $images as $image ): ?>
 
         <div class="gallery__box">
-          <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['title'] ?>" />
+          <img 
+            src="<?php echo $image['url'] ?>" 
+            alt="<?php echo $image['title'] ?>" 
+            width="<?php echo $image['width'] ?>" 
+            height="<?php echo $image['height'] ?>" 
+          />
         </div>
 
       <?php endforeach; ?>
