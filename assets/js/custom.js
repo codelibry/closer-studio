@@ -10,10 +10,17 @@ jQuery(function ($) {
 "use strict";
 
 jQuery(function ($) {
-  var link = $('.shrink-text__link');
+  var openLink = $('.shrink-text__link').eq(0);
+  var closeLink = $('.shrink-text__link').eq(1);
   var dropdown = $('.shrink-text__full');
-  link.click(function (event) {
+  openLink.click(function (event) {
     event.preventDefault();
-    dropdown.slideToggle();
+    dropdown.slideDown();
+    openLink.hide();
+  });
+  closeLink.click(function (event) {
+    event.preventDefault();
+    dropdown.slideUp();
+    openLink.fadeIn();
   });
 });

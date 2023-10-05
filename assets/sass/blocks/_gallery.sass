@@ -3,12 +3,19 @@
     display: flex
     align-items: center
     justify-content: space-between
+    gap: rem(30px)
 
     margin: 0 auto
     padding: 0 8px
     max-width: 1400px + 16px
 
+    +max-screen($breakpoint-md)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
   &__box
+    overflow: hidden
     max-width: rem(650px)
     max-height: rem(520px)
     display: flex

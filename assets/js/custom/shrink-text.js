@@ -1,10 +1,20 @@
 jQuery(function ($) {
-  let link = $('.shrink-text__link');
+  let openLink = $('.shrink-text__link').eq(0);
+  let closeLink = $('.shrink-text__link').eq(1);
   let dropdown = $('.shrink-text__full');
 
-  link.click(function(event){
+  openLink.click(function(event){
     event.preventDefault();
 
-    dropdown.slideToggle();
+    dropdown.slideDown();
+    openLink.hide();
   });
+
+  closeLink.click(function(event){
+    event.preventDefault();
+
+    dropdown.slideUp();
+    openLink.fadeIn();
+  });
+
 });
