@@ -13,14 +13,8 @@
 
         <a class="footer__link" href="<?php echo $email['url'] ?>"><?php echo $email['title'] ?></a>
 
-        <form class="form footer__form">
-          <div class="field">
-            <label for="newsletter" class="field__label">
-              Newsletter
-            </label>
-            <input id="newsletter" type="text" class="field__input" />
-          </div>
-        </form>
+        <?php echo apply_shortcodes('[contact-form-7 id="4d8d2d1" title="Newsletter"]'); ?>
+
       </div>
 
       <div class="footer__col footer__col--2">
