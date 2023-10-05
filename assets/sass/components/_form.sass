@@ -1,5 +1,7 @@
 .field
   display: flex
+  +max-screen($breakpoint-md)
+    flex-direction: column
 
 label
   +responsive-font(30, 16)
@@ -12,6 +14,9 @@ input
 
   +responsive-font(30, 16)
   text-align: center
+
+  +max-screen($breakpoint-md)
+    max-width: 100%
 
 
 .wpcf7 form .wpcf7-response-output
