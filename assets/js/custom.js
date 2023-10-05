@@ -10,8 +10,8 @@ jQuery(function ($) {
 "use strict";
 
 jQuery(function ($) {
-  $('.text__link').click(function (event) {
+  $('.shrink-text__link').click(function (event) {
     event.preventDefault();
-    $('.text__full').slideToggle();
+    $('.shrink-text__full').slideToggle();
   });
 });

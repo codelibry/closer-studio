@@ -63,8 +63,8 @@ html{scroll-behavior:smooth;background-color:#faf9f6}
 .gallery__flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around}
 .gallery__box{max-width:36.1111111111rem}
 .gallery__box img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
-.text__link{text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:300;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;line-height:1.4;gap:.8rem}
-.text__full{display:none}
+.shrink-text__link{text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:300;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;line-height:1.4;gap:.8rem}
+.shrink-text__full{display:none}
 @media(min-width:767px){body{font-size:calc(30px + 30 * (100vw / 1920))}
 h1,.h1{font-size:calc(32px + 65 * (100vw / 1920))}
 h2,.h2{font-size:calc(30px + 30 * (100vw / 1920))}
@@ -79,7 +79,7 @@ a{font-size:calc(12px + 18 * (100vw / 1920))}
 .menu{font-size:calc(18px + 8 * (100vw / 1920))}
 .field__label{font-size:calc(16px + 14 * (100vw / 1920))}
 .field__input{font-size:calc(16px + 14 * (100vw / 1920))}
-.text__link{font-size:calc(14px + 6 * (100vw / 1920))}
+.shrink-text__link{font-size:calc(14px + 6 * (100vw / 1920))}
 }@media only screen and (max-width:991.98px){.header__menu{display:none}
 .header__col--2{display:none}
 .header__col--3{-webkit-box-flex:0;-ms-flex:0 1;flex:0 1}
@@ -98,5 +98,5 @@ a{font-size:calc(12px + 30.6 * ((100vw - 320px) / 1920))}
 .menu{font-size:calc(18px + 13.6 * ((100vw - 320px) / 1920))}
 .field__label{font-size:calc(16px + 23.8 * ((100vw - 320px) / 1920))}
 .field__input{font-size:calc(16px + 23.8 * ((100vw - 320px) / 1920))}
-.text__link{font-size:calc(14px + 10.2 * ((100vw - 320px) / 1920))}
+.shrink-text__link{font-size:calc(14px + 10.2 * ((100vw - 320px) / 1920))}
 }
