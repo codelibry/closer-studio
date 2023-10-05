@@ -1,17 +1,26 @@
+<?php
+  $title = get_sub_field('shrink-text-title');
+  $excerpt = get_sub_field('shrink-text-excerpt');
+  $full = get_sub_field('shrink-text-full');
+?>
+
+<?php if ($title and $excerpt and $full): ?>
+
 <section id="shrink-text" class="section shrink-text">
   <div class="shrink-text__container">
-    <h2 class="shrink-text__title">About</h2>
+
+    <h2 class="shrink-text__title"><?php echo $title ?></h2>
+
     <p class="shrink-text__excerpt">
-      Closer Studio is a brand-building agency able to identify,
-      express and enhance the essence of the brands, and to leverage 
-      it for encouraging growth and develop     
+      <?php echo $excerpt ?>
       <a class="shrink-text__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 11.871l-5-4.871v3h-19v4h19v3z"/></svg> Read more</a>
     </p>
 
     <p class="shrink-text__full">
-      Blending solid strategic competences with empathy and attention to details, Closer Studio promotes a philosophy based on respect: for the brands and their values, for the authentic and meaningful stories, for the human being.
-      Based in Italy, the agency is rooted in culture, sense for Beauty, creativity, and thanks to its discerning eye it accompanies the brands along their journeys with a closer approach. Naturally.
-      Closer Studio is a collaboration place, too. It’s a continuous dialogue, a gatherer of like-minded people, companies, talents, creatives who enjoy cooperating, sharing experiences, and growing together.
+      <?php echo $full ?>
     </p>
+
   </div>
 </section>
+
+<?php endif ?>

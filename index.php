@@ -2,13 +2,17 @@
 
 <main class="home">
 
-<?php get_template_part('template-parts/acf-blocks/hero'); ?>
 
-<?php get_template_part('template-parts/acf-blocks/shrink-text'); ?>
+<?php if(have_rows('content')): ?>
 
-<?php get_template_part('template-parts/acf-blocks/gallery'); ?>
+  <?php while(have_rows('content')): the_row(); ?>
 
-<?php get_template_part('template-parts/acf-blocks/plain-text'); ?>
+    <?php get_template_part('template-parts/acf-blocks/' . get_row_layout()); ?>
+
+  <?php endwhile; ?>
+
+<?php endif; ?>
+
 
 </main>
 
