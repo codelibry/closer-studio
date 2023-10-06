@@ -10,6 +10,7 @@
     max-width: 1400px + 16px
 
     +max-screen($breakpoint-md)
+      padding: 0
       flex-direction: column
       justify-content: center
       align-items: center
@@ -19,6 +20,8 @@
     max-width: rem(660px)
     align-items: center
     display: flex
+    +max-screen($breakpoint-md)
+      max-width: 100%
     
     img
       max-width: 100%
