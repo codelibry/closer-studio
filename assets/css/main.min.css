@@ -87,9 +87,9 @@ input{max-width:22.6111111111rem;background-color:transparent;border-bottom:2px 
 h1,.h1{font-size:calc(32px + 65 * ((100vw - 320px) / 1460))}
 h2,.h2{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
 h2,.h2{margin-bottom:calc(15px + 75 * ((100vw - 320px) / 1460))}
-p{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
+p{font-size:calc(16px + 44 * ((100vw - 991px) / 1460))}
 a{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
-.menu-item a{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
+.menu-item a{font-size:calc(16px + 10 * ((100vw - 991px) / 1460))}
 .content-text a{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
 .text-size-20{font-size:calc(12px + 8 * ((100vw - 320px) / 1460))}
 .text-size-26{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
@@ -99,9 +99,9 @@ body{font-size:calc(30px + 30 * ((100vw - 320px) / 1460))}
 h1,.h1{font-size:calc(32px + 65 * ((100vw - 320px) / 1460))}
 h2,.h2{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
 h2,.h2{margin-bottom:calc(15px + 75 * ((100vw - 320px) / 1460))}
-p{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
+p{font-size:calc(16px + 44 * ((100vw - 991px) / 1460))}
 a{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
-.menu-item a{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
+.menu-item a{font-size:calc(16px + 10 * ((100vw - 991px) / 1460))}
 .content-text a{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
 .text-size-20{font-size:calc(12px + 8 * ((100vw - 320px) / 1460))}
 .text-size-26{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
