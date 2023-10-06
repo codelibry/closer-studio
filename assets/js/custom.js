@@ -4,13 +4,27 @@ jQuery(function ($) {
   var mobileMenuOverlay = $(".mobile-menu");
   var mobileMenuButton = $(".header__icon");
   var body = $("body");
+  var isOpen = false;
   mobileMenuButton.click(function (event) {
     event.stopPropagation();
-    mobileMenuOverlay.slideToggle();
+    toggleMenu();
   });
-  body.click(function () {
+  body.click(function (event) {
+    closeMenu();
+  });
+  function openMenu() {
+    mobileMenuButton.addClass('open');
+    mobileMenuOverlay.slideDown();
+    isOpen = true;
+  }
+  function closeMenu() {
+    mobileMenuButton.removeClass('open');
     mobileMenuOverlay.slideUp();
-  });
+    isOpen = false;
+  }
+  function toggleMenu() {
+    isOpen ? closeMenu() : openMenu();
+  }
 });
 "use strict";
 
