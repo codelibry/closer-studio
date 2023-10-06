@@ -6,6 +6,8 @@
 label
   +adaptive-value('font-size', 30, 16, 1)
   text-transform: uppercase
+  +max-screen($breakpoint-md)
+    text-align: center
 
 input
   max-width: rem(407px)

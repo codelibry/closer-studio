@@ -20,6 +20,7 @@
     &--1
       justify-content: space-between
       +max-screen($breakpoint-md)
+        align-items: center
         gap: rem(20px)
 
     &--2
@@ -30,10 +31,14 @@
     align-items: flex-end
     flex-wrap: wrap
     gap: rem(15px)
+    +max-screen($breakpoint-md)
+      justify-content: center
 
     li
       line-height: 0.5
-      text-align: center
+      text-align: right
+      +max-screen($breakpoint-md)
+        text-align: center
 
     a
       text-transform: uppercase
