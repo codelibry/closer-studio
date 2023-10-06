@@ -85,8 +85,8 @@ input{max-width:22.6111111111rem;background-color:transparent;border-bottom:2px 
 .hero__container{position:relative;min-height:30vh;height:35vw}
 .hero__title{position:absolute;color:#faf9f6;bottom:9%}
 .gallery__flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:1.6666666667rem;margin:0 auto;padding:0 8px;max-width:1416px}
-.gallery__box{overflow:hidden;width:47%;max-width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
-.gallery__box:nth-child(2){width:30%;max-width:100%}
+.gallery__box{overflow:hidden;width:38%;max-width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
+.gallery__box--small{width:28%;max-width:100%}
 .shrink-text__link{font-size:16px;text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:300;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;line-height:1.4;gap:.8rem}
 .shrink-text__full{display:none}
 .errorPage{min-height:80vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-top:200px;padding-bottom:200px}
@@ -167,5 +167,5 @@ label{text-align:center}
 input{max-width:100%}
 }@media only screen and (max-width:479.98px){.gallery__flex{padding:0;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .gallery__box{max-width:100%;width:calc(47% * 2)}
-.gallery__box:nth-child(2){width:60%}
+.gallery__box--small{width:60%}
 }

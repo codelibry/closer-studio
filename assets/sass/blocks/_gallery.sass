@@ -17,15 +17,16 @@
 
   &__box
     overflow: hidden
-    width: 47%
+    width: 38%
     max-width: 100%
     align-items: center
     display: flex
     +max-screen($breakpoint-sm)
       max-width: 100%
       width: calc(47% * 2)
-    &:nth-child(2)
-      width: 30%
+
+    &--small
+      width: 28%
       max-width: 100%
       +max-screen($breakpoint-sm)
         width: 60%
