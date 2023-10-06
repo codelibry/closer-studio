@@ -1,5 +1,5 @@
 body
-  +responsive-font(60, 30)
+  +adaptive-value('font-size', 60, 30, 1)
   font-family: $font-family-base
   font-weight: $default-font-weight
   font-style: normal
@@ -15,22 +15,22 @@ body
 
 h1,
 .h1
-  +responsive-font(97, 32)
+  +adaptive-value('font-size', 97, 32, 1)
   letter-spacing: 2px
   line-height: 1.1
 
 h2,
 .h2
-  +responsive-font(60, 24)
-  +adaptive-value('margin-bottom', 90, 15, 0)
+  +adaptive-value('font-size', 60, 24, 1)
+  +adaptive-value('margin-bottom', 90, 15, 1)
   text-transform: uppercase
 
 p
-  +responsive-font(60, 24)
+  +adaptive-value('font-size', 60, 24, 1)
   line-height: 1.2
 
 a
-  +responsive-font(30, 16)
+  +adaptive-value('font-size', 30, 16, 1)
   transition: 0.2s ease
 
   &:link,
@@ -42,21 +42,28 @@ a
     color: rgba($color-dark, 0.6)
 
 .menu-item a
+  +adaptive-value('font-size', 26, 16, 1)
+  text-transform: uppercase
+  font-weight: bold
+  display: block
   &:hover
     color: rgba($color-dark, 0.6)
 
+.content-text
+  a
+    +adaptive-value('font-size', 60, 24, 1)
 
 // text sizes
 
 .text-size
   &-20
-    +responsive-font(20, 12)
+    +adaptive-value('font-size', 20, 12, 1)
 
   &-26
-    +responsive-font(26, 16)
+    +adaptive-value('font-size', 26, 16, 1)
 
   &-30
-    +responsive-font(30, 18)
+    +adaptive-value('font-size', 30, 18, 1)
 
   &-62
-    +responsive-font(62, 32)
+    +adaptive-value('font-size', 62, 32, 1)

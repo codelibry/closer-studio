@@ -4,7 +4,7 @@
     flex-direction: column
 
 label
-  +responsive-font(30, 16)
+  +adaptive-value('font-size', 30, 16, 1)
   text-transform: uppercase
 
 input
@@ -12,7 +12,7 @@ input
   background-color: transparent
   border-bottom: 2px solid $color-dark
 
-  +responsive-font(30, 16)
+  +adaptive-value('font-size', 30, 16, 1)
   text-align: center
 
   +max-screen($breakpoint-md)
@@ -20,5 +20,5 @@ input
 
 
 .wpcf7 form .wpcf7-response-output
-  +responsive-font(30, 16)
+  +adaptive-value('font-size', 30, 16, 1)
   margin: rem(16px) 0 0 0

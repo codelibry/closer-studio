@@ -1,7 +1,7 @@
 .footer 
-  +adaptive-value('padding-top', 60, 20, 0)
-  +adaptive-value('padding-bottom', 20, 15, 0)
-  +adaptive-value('margin-top', 80, 20, 0)
+  +adaptive-value('padding-top', 60, 20, 1)
+  +adaptive-value('padding-bottom', 20, 15, 1)
+  +adaptive-value('margin-top', 80, 20, 1)
   background-color: $color-grey
 
   &__flex
@@ -41,7 +41,7 @@
       text-transform: uppercase
 
   &__copyright
-    +responsive-font(20, 14)
+    +adaptive-value('font-size', 20, 14, 1)
     text-align: center
     margin-top: 1.2em
     +max-screen($breakpoint-md)
