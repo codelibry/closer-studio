@@ -154,7 +154,9 @@ p{font-size:calc(16px + 24 * ((100vw - 320px) / 1460))}
 .header__col--2{display:none}
 .header__col--3{-webkit-box-flex:0;-ms-flex:0 1;flex:0 1}
 .header__icon{display:-webkit-box;display:-ms-flexbox;display:flex}
-}@media only screen and (max-width:767.98px){.footer__flex{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;gap:1.6666666667rem}
+}@media only screen and (max-width:767.98px){.field{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+input{max-width:100%}
+}@media only screen and (max-width:479.98px){.footer__flex{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:1.6666666667rem}
 .footer__col--1{-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:1.1111111111rem}
 .footer__social{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .footer__social li{text-align:center}
@@ -162,10 +164,8 @@ p{font-size:calc(16px + 24 * ((100vw - 320px) / 1460))}
 .footer__social--three-cols li{-webkit-box-flex:0;-ms-flex:0 1 calc(33% - 15px);flex:0 1 calc(33% - 15px)}
 .footer__social{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .footer__copyright{margin-top:1.5em}
-.field{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 label{text-align:center}
-input{max-width:100%}
-}@media only screen and (max-width:479.98px){.gallery__flex{padding:0;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.gallery__flex{padding:0;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .gallery__box{max-width:100%;width:calc(47% * 2)}
 .gallery__box--small{width:60%}
 }
