@@ -15,12 +15,13 @@
       <?php foreach( $images as $image ): ?>
 
         <div class="gallery__box">
-          <img 
+          <!-- <img 
             src="<?php echo $image['url'] ?>" 
             alt="<?php echo $image['title'] ?>" 
             width="<?php echo $image['width'] ?>" 
             height="<?php echo $image['height'] ?>" 
-          />
+          /> -->
+          <?php image_acf($image);?>
         </div>
 
       <?php endforeach; ?>

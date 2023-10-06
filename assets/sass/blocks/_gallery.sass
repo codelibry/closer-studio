@@ -9,7 +9,7 @@
     padding: 0 8px
     max-width: 1400px + 16px
 
-    +max-screen($breakpoint-md)
+    +max-screen($breakpoint-sm)
       padding: 0
       flex-direction: column
       justify-content: center
@@ -17,13 +17,15 @@
 
   &__box
     overflow: hidden
-    max-width: rem(660px)
+    width: 47%
+    max-width: 100%
     align-items: center
     display: flex
-    +max-screen($breakpoint-md)
+    +max-screen($breakpoint-sm)
       max-width: 100%
-    
-    img
+      width: calc(47% * 2)
+    &:nth-child(2)
+      width: 30%
       max-width: 100%
-      max-height: 100%
-      object-fit: cover
+      +max-screen($breakpoint-sm)
+        width: 60%

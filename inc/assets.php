@@ -32,3 +32,47 @@ if ( $DEVELOPMENT ) {
 } else {
   add_action('wp_enqueue_scripts', 'closer_studio_assets_prod');
 }
+
+
+//ACF image
+function image_acf($image,$class=''){
+  if( !empty( $image ) ): ?>
+    <?php
+      $imgWidth = $image['width'];
+      $imgHeight = $image['height'];
+
+      if($image['mime_type'] === 'image/svg+xml') {
+        $img = wp_get_attachment_image_src($image['id'], 'full');
+        $imgWidth = $img[1];
+        $imgHeight = $img[2];
+      }
+
+      if ($image['alt']) : 
+        $alt = $image['alt'];
+      elseif($image['title']) :
+        $alt = $image['title'];
+      elseif($image['caption']) :
+        $alt = $image['caption'];
+      endif;
+
+      $imgRatio = 100*$imgHeight/$imgWidth;
+      $blockPadding = 'style="padding-bottom:'.$imgRatio.'%;"';
+
+      $attachment_id = $image['id'];
+      $image_large_src = wp_get_attachment_image_src( $attachment_id, 'full' );
+
+    ?>
+    <div class="img-block" <?php echo $blockPadding; ?>>
+      <img src="<?php echo $image_large_src[0]; ?>"
+            srcset="<?php echo wp_get_attachment_image_srcset( $attachment_id, 'non-cropped-extra-large' ); ?>"
+            sizes="(min-width: 840px) 1240px, (min-width: 720px) calc(100vw - 200px), 100vw"
+            alt="<?php echo $alt; ?>" class="lazy-img <?php echo $class; ?>">
+    </div>
+    <noscript>
+    <img src="<?php echo $image_large_src[0]; ?>"
+            srcset="<?php echo wp_get_attachment_image_srcset( $attachment_id, 'non-cropped-extra-large' ); ?>"
+            sizes="(min-width: 840px) 1240px, (min-width: 720px) calc(100vw - 200px), 100vw"
+            alt="<?php echo $alt; ?>">
+    </noscript>
+  <?php endif; 
+}
