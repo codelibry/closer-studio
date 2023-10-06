@@ -20,7 +20,7 @@ p{font-size:60px;line-height:1.2}
 a{font-size:30px;-webkit-transition:.2s ease;transition:.2s ease}
 a:link,a:active,a:visited{color:#000}
 a:hover{color:rgba(0,0,0,0.6)}
-.menu-item a{font-size:26px;text-transform:uppercase;font-weight:bold;display:block}
+.menu-item a{font-size:26px;text-transform:uppercase;font-weight:bold;display:block;text-align:center}
 .menu-item a:hover{color:rgba(0,0,0,0.6)}
 .content-text a{font-size:60px}
 .text-size-20{font-size:20px}
@@ -36,7 +36,7 @@ p{font-size:60px;line-height:1.2}
 a{font-size:30px;-webkit-transition:.2s ease;transition:.2s ease}
 a:link,a:active,a:visited{color:#000}
 a:hover{color:rgba(0,0,0,0.6)}
-.menu-item a{font-size:26px;text-transform:uppercase;font-weight:bold;display:block}
+.menu-item a{font-size:26px;text-transform:uppercase;font-weight:bold;display:block;text-align:center}
 .menu-item a:hover{color:rgba(0,0,0,0.6)}
 .content-text a{font-size:60px}
 .text-size-20{font-size:20px}
@@ -69,7 +69,7 @@ ul li{display:block;width:100%}
 .mobile-menu{background-color:#eaeaea;position:absolute;left:0;z-index:8;width:100%;display:none}
 .mobile-menu .menu{height:auto;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:1rem 0;gap:1rem}
 .mobile-menu .menu .menu-item li{border-bottom:1px solid #000;display:block;width:100vw}
-.mobile-menu .menu .menu-item a{width:100%;display:block;line-height:1.5}
+.mobile-menu .menu .menu-item a{width:100%;display:block;line-height:1.5;text-align:left}
 .field{display:-webkit-box;display:-ms-flexbox;display:flex}
 label{font-size:30px;text-transform:uppercase}
 input{max-width:22.6111111111rem;background-color:transparent;border-bottom:2px solid #000;font-size:30px;text-align:center}
