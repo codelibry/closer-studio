@@ -85,6 +85,11 @@ input{max-width:22.6111111111rem;background-color:transparent;border-bottom:2px 
 .gallery__box:nth-child(2){width:30%;max-width:100%}
 .shrink-text__link{font-size:16px;text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:300;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;line-height:1.4;gap:.8rem}
 .shrink-text__full{display:none}
+.errorPage{min-height:80vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-top:200px;padding-bottom:200px}
+.errorPage__content{text-align:center}
+.errorPage__title{font-weight:bold}
+.errorPage__subtitle{margin-top:30px}
+.errorPage__button{margin-top:30px}
 @media(max-width:1780px){body{font-size:calc(30px + 30 * ((100vw - 320px) / 1460))}
 h1,.h1{font-size:calc(32px + 65 * ((100vw - 320px) / 1460))}
 h2,.h2{margin-bottom:calc(15px + 75 * ((100vw - 320px) / 1460))}
@@ -120,6 +125,8 @@ label{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 input{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 .wpcf7 form .wpcf7-response-output{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 .shrink-text__link{font-size:calc(12px + 4 * ((100vw - 320px) / 1460))}
+.errorPage{padding-top:calc(50px + 150 * ((100vw - 320px) / 1460))}
+.errorPage{padding-bottom:calc(50px + 150 * ((100vw - 320px) / 1460))}
 }@media only screen and (max-width:1600.98px){h2,.h2{margin-bottom:50px;font-size:40px}
 p{font-size:40px}
 .menu-item a{font-size:20px}
