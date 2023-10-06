@@ -1,6 +1,6 @@
 <?php
 
-$DEVELOPMENT = true; // change to false if PRODUCTION
+$DEVELOPMENT = false; // change to false if PRODUCTION
 
 
 // For Development ( Without caching )
@@ -23,6 +23,9 @@ function closer_studio_assets_dev(){
 // For Production ( With caching )
 function closer_studio_assets_prod(){
   $ASSETS = get_template_directory_uri() . '/assets'; // Dir to the assets theme folder
+
+  wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js', array(), false, true );
+  wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js', array('gsap-js'), false, true );
 
   wp_enqueue_style( 'closer-studio-main-stylesheet', "{$ASSETS}/css/main.min.css", array(), '1.0.0', 'all' );
   wp_enqueue_script( 'closer-studio-vendor-script', "{$ASSETS}/js/vendor.min.js", array('jquery'), '1.0.0', true );
