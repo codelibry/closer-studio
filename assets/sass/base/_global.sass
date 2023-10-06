@@ -6,6 +6,10 @@ html
   margin: 0 auto
   padding: 0 15px
   max-width: 1780px + 30px
+  width: 90%
+
+  +max-screen($breakpoint-xl) 
+    width: 100%
 
 .wrapper
   position: relative
@@ -17,3 +21,7 @@ html
 .section
   +adaptive-value('padding-top', 40, 15, 1)
   +adaptive-value('padding-bottom', 40, 15, 1)
+
+ul li
+  display: block
+  width: 100%
