@@ -28,24 +28,6 @@ jQuery(function ($) {
 });
 "use strict";
 
-jQuery(function ($) {
-  var openLink = $('.shrink-text__link').eq(0);
-  var closeLink = $('.shrink-text__link').eq(1);
-  var dropdown = $('.shrink-text__full');
-  openLink.click(function (event) {
-    event.preventDefault();
-    dropdown.slideDown();
-    openLink.hide();
-  });
-  closeLink.click(function (event) {
-    event.preventDefault();
-    dropdown.slideUp();
-    openLink.fadeIn();
-  });
-});
-"use strict";
-"use strict";
-
 document.addEventListener("DOMContentLoaded", function (event) {
   gsap.registerPlugin(ScrollTrigger);
   gsap.utils.toArray(".hero").forEach(function (container) {
@@ -64,5 +46,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
       yPercent: 50,
       ease: "none"
     });
+  });
+});
+"use strict";
+
+jQuery(function ($) {
+  var openLink = $('.shrink-text__link').eq(0);
+  var closeLink = $('.shrink-text__link').eq(1);
+  var dropdown = $('.shrink-text__full');
+  openLink.click(function (event) {
+    event.preventDefault();
+    dropdown.slideDown();
+    openLink.hide();
+  });
+  closeLink.click(function (event) {
+    event.preventDefault();
+    dropdown.slideUp();
+    openLink.fadeIn();
   });
 });
