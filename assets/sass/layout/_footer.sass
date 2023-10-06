@@ -27,12 +27,9 @@
 
   &__social
     display: flex
-    flex-direction: column
     align-items: flex-end
+    flex-wrap: wrap
     gap: rem(15px)
-
-    +max-screen($breakpoint-md)
-      align-items: center
 
     li
       line-height: 0.5
@@ -40,6 +37,19 @@
 
     a
       text-transform: uppercase
+
+    &--two-cols
+      li
+        +max-screen($breakpoint-md)
+          flex: 0 1 calc(50% - 15px)
+
+    &--three-cols
+      li
+        +max-screen($breakpoint-md)
+          flex: 0 1 calc(33% - 15px)
+
+    +max-screen($breakpoint-md)
+      align-items: center
 
   &__copyright
     +adaptive-value('font-size', 20, 14, 1)
