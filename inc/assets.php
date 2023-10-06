@@ -12,9 +12,12 @@ function closer_studio_assets_dev(){
   $vendor_version = filemtime( "{$ABSOLUTE_ASSETS_PATH}/js/vendor.min.js" );
   $custom_version = filemtime( "{$ABSOLUTE_ASSETS_PATH}/js/custom.min.js" );
 
+  wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js', array(), false, true );
+  wp_enqueue_script( 'gsap-st', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js', array('gsap-js'), false, true );
+
   wp_enqueue_style( 'closer-studio-main-stylesheet', "{$ASSETS}/css/main.min.css", array(), $style_version, 'all' );
   wp_enqueue_script( 'closer-studio-vendor-script', "{$ASSETS}/js/vendor.min.js", array('jquery'), $vendor_version, true );
-  wp_enqueue_script( 'closer-studio-custom-script', "{$ASSETS}/js/custom.min.js", array('closer-studio-vendor-script', 'jquery'), $custom_version, true );
+  wp_enqueue_script( 'closer-studio-custom-script', "{$ASSETS}/js/custom.min.js", array('closer-studio-vendor-script', 'gsap-js', 'gsap-st'), $custom_version, true );
 }
 
 // For Production ( With caching )
@@ -23,7 +26,7 @@ function closer_studio_assets_prod(){
 
   wp_enqueue_style( 'closer-studio-main-stylesheet', "{$ASSETS}/css/main.min.css", array(), '1.0.0', 'all' );
   wp_enqueue_script( 'closer-studio-vendor-script', "{$ASSETS}/js/vendor.min.js", array('jquery'), '1.0.0', true );
-  wp_enqueue_script( 'closer-studio-custom-script', "{$ASSETS}/js/custom.min.js", array('closer-studio-vendor-script', 'jquery'), '1.0.0', true );
+  wp_enqueue_script( 'closer-studio-custom-script', "{$ASSETS}/js/custom.min.js", array('closer-studio-vendor-script'), '1.0.0', true );
 }
 
 
