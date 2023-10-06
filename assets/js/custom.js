@@ -3,8 +3,13 @@
 jQuery(function ($) {
   var mobileMenuOverlay = $(".mobile-menu");
   var mobileMenuButton = $(".header__icon");
-  mobileMenuButton.click(function () {
+  var body = $("body");
+  mobileMenuButton.click(function (event) {
+    event.stopPropagation();
     mobileMenuOverlay.slideToggle();
+  });
+  body.click(function () {
+    mobileMenuOverlay.slideUp();
   });
 });
 "use strict";
