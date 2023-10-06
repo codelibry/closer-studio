@@ -15,12 +15,12 @@ img{vertical-align:top}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}
 body{font-size:60px;font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
 h1,.h1{font-size:97px;letter-spacing:2px;line-height:1.1}
-h2,.h2{font-size:60px;margin-bottom:90px;text-transform:uppercase}
-p{font-size:20px;line-height:1.2}
+h2,.h2{margin-bottom:90px;font-size:60px;text-transform:uppercase}
+p{font-size:60px;line-height:1.2}
 a{font-size:30px;-webkit-transition:.2s ease;transition:.2s ease}
 a:link,a:active,a:visited{color:#000}
 a:hover{color:rgba(0,0,0,0.6)}
-.menu-item a{font-size:26px;text-transform:uppercase;font-weight:bold;display:block;text-align:center}
+.menu-item a{font-size:26px;text-transform:uppercase;display:block;text-align:center}
 .menu-item a:hover{color:rgba(0,0,0,0.6)}
 .content-text a{font-size:60px}
 .text-size-20{font-size:20px}
@@ -31,12 +31,12 @@ a:hover{color:rgba(0,0,0,0.6)}
 @font-face{font-family:"TradeGothic";font-style:normal;font-weight:300;src:url("../fonts/TradeGothic-LT-Regular.ttf") format("truetype")}
 body{font-size:60px;font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
 h1,.h1{font-size:97px;letter-spacing:2px;line-height:1.1}
-h2,.h2{font-size:60px;margin-bottom:90px;text-transform:uppercase}
-p{font-size:20px;line-height:1.2}
+h2,.h2{margin-bottom:90px;font-size:60px;text-transform:uppercase}
+p{font-size:60px;line-height:1.2}
 a{font-size:30px;-webkit-transition:.2s ease;transition:.2s ease}
 a:link,a:active,a:visited{color:#000}
 a:hover{color:rgba(0,0,0,0.6)}
-.menu-item a{font-size:26px;text-transform:uppercase;font-weight:bold;display:block;text-align:center}
+.menu-item a{font-size:26px;text-transform:uppercase;display:block;text-align:center}
 .menu-item a:hover{color:rgba(0,0,0,0.6)}
 .content-text a{font-size:60px}
 .text-size-20{font-size:20px}
@@ -85,32 +85,26 @@ input{max-width:22.6111111111rem;background-color:transparent;border-bottom:2px 
 .gallery__box:nth-child(2){width:30%;max-width:100%}
 .shrink-text__link{font-size:16px;text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:300;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;line-height:1.4;gap:.8rem}
 .shrink-text__full{display:none}
-@media only screen and (min-width:479.98px){p{font-size:22px}
-p{font-size:22px}
-}@media only screen and (min-width:767.98px){p{font-size:24px}
-p{font-size:24px}
-}@media only screen and (min-width:991.98px){p{font-size:60px}
-p{font-size:60px}
-}@media only screen and (min-width:991.98px) and (max-width:1780px){p{font-size:calc(24px + 36 * ((100vw - 991px) / 1460))}
-p{font-size:calc(24px + 36 * ((100vw - 991px) / 1460))}
-}@media(max-width:1780px){body{font-size:calc(30px + 30 * ((100vw - 320px) / 1460))}
+@media(max-width:1780px){body{font-size:calc(30px + 30 * ((100vw - 320px) / 1460))}
 h1,.h1{font-size:calc(32px + 65 * ((100vw - 320px) / 1460))}
-h2,.h2{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
 h2,.h2{margin-bottom:calc(15px + 75 * ((100vw - 320px) / 1460))}
+h2,.h2{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
+p{font-size:calc(16px + 44 * ((100vw - 320px) / 1460))}
 a{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
-.menu-item a{font-size:calc(16px + 10 * ((100vw - 991px) / 1460))}
-.content-text a{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
+.menu-item a{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
+.content-text a{font-size:calc(16px + 44 * ((100vw - 320px) / 1460))}
 .text-size-20{font-size:calc(12px + 8 * ((100vw - 320px) / 1460))}
 .text-size-26{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
 .text-size-30{font-size:calc(18px + 12 * ((100vw - 320px) / 1460))}
 .text-size-62{font-size:calc(32px + 30 * ((100vw - 320px) / 1460))}
 body{font-size:calc(30px + 30 * ((100vw - 320px) / 1460))}
 h1,.h1{font-size:calc(32px + 65 * ((100vw - 320px) / 1460))}
-h2,.h2{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
 h2,.h2{margin-bottom:calc(15px + 75 * ((100vw - 320px) / 1460))}
+h2,.h2{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
+p{font-size:calc(16px + 44 * ((100vw - 320px) / 1460))}
 a{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
-.menu-item a{font-size:calc(16px + 10 * ((100vw - 991px) / 1460))}
-.content-text a{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
+.menu-item a{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
+.content-text a{font-size:calc(16px + 44 * ((100vw - 320px) / 1460))}
 .text-size-20{font-size:calc(12px + 8 * ((100vw - 320px) / 1460))}
 .text-size-26{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
 .text-size-30{font-size:calc(18px + 12 * ((100vw - 320px) / 1460))}
@@ -126,6 +120,24 @@ label{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 input{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 .wpcf7 form .wpcf7-response-output{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 .shrink-text__link{font-size:calc(12px + 4 * ((100vw - 320px) / 1460))}
+}@media only screen and (max-width:1600.98px){h2,.h2{margin-bottom:50px;font-size:40px}
+p{font-size:40px}
+.menu-item a{font-size:20px}
+.content-text a{font-size:40px}
+h2,.h2{margin-bottom:50px;font-size:40px}
+p{font-size:40px}
+.menu-item a{font-size:20px}
+.content-text a{font-size:40px}
+}@media only screen and (max-width:1600.98px) and (max-width:1780px){h2,.h2{margin-bottom:calc(15px + 35 * ((100vw - 320px) / 1460))}
+h2,.h2{font-size:calc(24px + 16 * ((100vw - 320px) / 1460))}
+p{font-size:calc(16px + 24 * ((100vw - 320px) / 1460))}
+.menu-item a{font-size:calc(16px + 4 * ((100vw - 320px) / 1460))}
+.content-text a{font-size:calc(16px + 24 * ((100vw - 320px) / 1460))}
+h2,.h2{margin-bottom:calc(15px + 35 * ((100vw - 320px) / 1460))}
+h2,.h2{font-size:calc(24px + 16 * ((100vw - 320px) / 1460))}
+p{font-size:calc(16px + 24 * ((100vw - 320px) / 1460))}
+.menu-item a{font-size:calc(16px + 4 * ((100vw - 320px) / 1460))}
+.content-text a{font-size:calc(16px + 24 * ((100vw - 320px) / 1460))}
 }@media only screen and (max-width:1200.98px){[class*="__container"]{width:100%}
 }@media only screen and (max-width:991.98px){.header__menu{display:none}
 .header__col--2{display:none}

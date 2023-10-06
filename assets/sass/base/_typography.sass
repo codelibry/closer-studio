@@ -21,13 +21,18 @@ h1,
 
 h2,
 .h2
-  +adaptive-value('font-size', 60, 24, 1)
   +adaptive-value('margin-bottom', 90, 15, 1)
+  +adaptive-value('font-size', 60, 24, 1)
   text-transform: uppercase
+  +max-screen($breakpoint-xxl)
+    +adaptive-value('margin-bottom', 50, 15, 1)
+    +adaptive-value('font-size', 40, 24, 1)
 
 p
-  +medium-screen-adaptive-value('font-size', 60, 16 , 1)
+  +adaptive-value('font-size', 60, 16 , 1)
   line-height: 1.2
+  +max-screen($breakpoint-xxl)
+    +adaptive-value('font-size', 40, 16 , 1)
 
 a
   +adaptive-value('font-size', 30, 16, 1)
@@ -42,17 +47,20 @@ a
     color: rgba($color-dark, 0.6)
 
 .menu-item a
-  +medium-screen-adaptive-value('font-size', 26, 16, 1)
+  +adaptive-value('font-size', 26, 16, 1)
   text-transform: uppercase
-  font-weight: bold
   display: block
   text-align: center
+  +max-screen($breakpoint-xxl)
+    +adaptive-value('font-size', 20, 16, 1)
   &:hover
     color: rgba($color-dark, 0.6)
 
 .content-text
   a
-    +adaptive-value('font-size', 60, 24, 1)
+    +adaptive-value('font-size', 60, 16, 1)
+    +max-screen($breakpoint-xxl)
+      +adaptive-value('font-size', 40, 16, 1)
 
 // text sizes
 
