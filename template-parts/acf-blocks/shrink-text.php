@@ -1,4 +1,5 @@
 <?php
+  $arrow_right_svg = get_template_directory_uri() . '/assets/img/arrow-right.svg';
   $title = get_sub_field('shrink-text-title');
   $excerpt = get_sub_field('shrink-text-excerpt');
   $full = get_sub_field('shrink-text-full');
@@ -13,12 +14,18 @@
 
     <p class="shrink-text__excerpt">
       <?php echo $excerpt ?>
-      <a class="shrink-text__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 11.871l-5-4.871v3h-19v4h19v3z"/></svg><?php _e('Read more','closer-studio');?></a>
+      <a class="shrink-text__link" href="#">
+        <img src="<?php echo $arrow_right_svg ?>" />
+        <?php _e('Read more','closer-studio');?>
+      </a>
     </p>
 
     <p class="shrink-text__full">
       <?php echo $full ?>
-      <a class="shrink-text__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 11.871l-5-4.871v3h-19v4h19v3z"/></svg><?php _e('Show less','closer-studio');?></a>
+      <a class="shrink-text__link" href="#">
+        <img src="<?php echo $arrow_right_svg ?>" />
+        <?php _e('Show less','closer-studio');?>
+      </a>
     </p>
 
 

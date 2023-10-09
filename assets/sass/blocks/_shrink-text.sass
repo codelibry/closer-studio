@@ -1,13 +1,16 @@
 .shrink-text
   &__link
-    +adaptive-value('font-size', 16, 12, 1)
+    +adaptive-value('font-size', 20, 8, 1)
+    +adaptive-value('line-height', 60, 16 , 1)
     text-transform: uppercase
     display: inline-flex
     align-items: center
     font-weight: 300
     width: fit-content
-    line-height: 1.4
-    gap: 0.8rem
+    gap: 0.5rem
+
+    img
+      +adaptive-value('height', 22, 10, 1)
 
   &__full
     display: none

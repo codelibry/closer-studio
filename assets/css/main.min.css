@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}
 body{font-size:60px;font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
 h1,.h1{font-size:97px;letter-spacing:2px;line-height:1.1}
 h2,.h2{margin-bottom:90px;font-size:60px;text-transform:uppercase}
-p{font-size:60px;line-height:1.2}
+p{font-size:60px;line-height:60px}
 a{font-size:30px;-webkit-transition:.2s ease;transition:.2s ease}
 a:link,a:active,a:visited{color:#000}
 a:hover{color:rgba(0,0,0,0.6)}
@@ -32,7 +32,7 @@ a:hover{color:rgba(0,0,0,0.6)}
 body{font-size:60px;font-family:"TradeGothic",sans-serif;font-weight:300;font-style:normal;line-height:1.4;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent}
 h1,.h1{font-size:97px;letter-spacing:2px;line-height:1.1}
 h2,.h2{margin-bottom:90px;font-size:60px;text-transform:uppercase}
-p{font-size:60px;line-height:1.2}
+p{font-size:60px;line-height:60px}
 a{font-size:30px;-webkit-transition:.2s ease;transition:.2s ease}
 a:link,a:active,a:visited{color:#000}
 a:hover{color:rgba(0,0,0,0.6)}
@@ -88,7 +88,8 @@ input{max-width:22.6111111111rem;background-color:transparent;border-bottom:2px 
 .gallery__flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:1.6666666667rem;margin:0 auto;padding:0 8px;max-width:1416px}
 .gallery__box{overflow:hidden;width:38%;max-width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}
 .gallery__box--small{width:28%;max-width:100%}
-.shrink-text__link{font-size:16px;text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:300;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;line-height:1.4;gap:.8rem}
+.shrink-text__link{font-size:20px;line-height:60px;text-transform:uppercase;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-weight:300;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;gap:.5rem}
+.shrink-text__link img{height:22px}
 .shrink-text__full{display:none}
 .errorPage{min-height:80vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-top:200px;padding-bottom:200px}
 .errorPage__content{text-align:center}
@@ -100,6 +101,7 @@ h1,.h1{font-size:calc(32px + 65 * ((100vw - 320px) / 1460))}
 h2,.h2{margin-bottom:calc(15px + 75 * ((100vw - 320px) / 1460))}
 h2,.h2{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
 p{font-size:calc(16px + 44 * ((100vw - 320px) / 1460))}
+p{line-height:calc(16px + 44 * ((100vw - 320px) / 1460))}
 a{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 .menu-item a{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
 .content-text a{font-size:calc(16px + 44 * ((100vw - 320px) / 1460))}
@@ -112,6 +114,7 @@ h1,.h1{font-size:calc(32px + 65 * ((100vw - 320px) / 1460))}
 h2,.h2{margin-bottom:calc(15px + 75 * ((100vw - 320px) / 1460))}
 h2,.h2{font-size:calc(24px + 36 * ((100vw - 320px) / 1460))}
 p{font-size:calc(16px + 44 * ((100vw - 320px) / 1460))}
+p{line-height:calc(16px + 44 * ((100vw - 320px) / 1460))}
 a{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 .menu-item a{font-size:calc(16px + 10 * ((100vw - 320px) / 1460))}
 .content-text a{font-size:calc(16px + 44 * ((100vw - 320px) / 1460))}
@@ -129,7 +132,9 @@ a{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 label{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 input{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
 .wpcf7 form .wpcf7-response-output{font-size:calc(16px + 14 * ((100vw - 320px) / 1460))}
-.shrink-text__link{font-size:calc(12px + 4 * ((100vw - 320px) / 1460))}
+.shrink-text__link{font-size:calc(8px + 12 * ((100vw - 320px) / 1460))}
+.shrink-text__link{line-height:calc(16px + 44 * ((100vw - 320px) / 1460))}
+.shrink-text__link img{height:calc(10px + 12 * ((100vw - 320px) / 1460))}
 .errorPage{padding-top:calc(50px + 150 * ((100vw - 320px) / 1460))}
 .errorPage{padding-bottom:calc(50px + 150 * ((100vw - 320px) / 1460))}
 }@media only screen and (max-width:1600.98px){h2,.h2{margin-bottom:50px;font-size:40px}
