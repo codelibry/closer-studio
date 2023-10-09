@@ -1,6 +1,6 @@
 <?php
 
-  $home_url = get_home_url();
+  $home_url = pll_home_url();
 
   $logo_title = get_field('logo_text', 'option');
   $logo_image = get_field('logo_image', 'option');

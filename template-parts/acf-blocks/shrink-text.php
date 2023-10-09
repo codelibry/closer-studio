@@ -16,7 +16,7 @@
       <?php echo $excerpt ?>
       <a class="shrink-text__link" href="#">
         <img src="<?php echo $arrow_right_svg ?>" />
-        <?php _e('Read more','closer-studio');?>
+        <?php pll_e('Read more','closer-studio');?>
       </a>
     </p>
 
@@ -24,7 +24,7 @@
       <?php echo $full ?>
       <a class="shrink-text__link" href="#">
         <img src="<?php echo $arrow_right_svg ?>" />
-        <?php _e('Show less','closer-studio');?>
+        <?php pll_e('Show less','closer-studio');?>
       </a>
     </p>
 
