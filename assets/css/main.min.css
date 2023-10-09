@@ -55,8 +55,8 @@ ul li{display:block;width:100%}
 .header__logo-text{font-size:62px;font-family:"Gascogne-Regular",sans-serif}
 .header__logo-box{display:block;overflow:hidden;max-height:120px;max-width:140px}
 .header__logo-box img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
-.header__icon{display:none;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;gap:.4444444444rem}
-.header__icon div{background-color:#000;width:2.2222222222rem;height:.3333333333rem;-webkit-transition:.2s ease;transition:.2s ease}
+.header__icon{display:none;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;gap:.5rem}
+.header__icon div{background-color:#000;width:2rem;height:.2222222222rem;-webkit-transition:.2s ease;transition:.2s ease}
 .header__icon.open{-webkit-transform:translateX(-50%);transform:translateX(-50%)}
 .header__icon.open div:nth-child(1){-webkit-transform:rotate(45deg) translateX(50%);transform:rotate(45deg) translateX(50%)}
 .header__icon.open div:nth-child(2){opacity:0}
