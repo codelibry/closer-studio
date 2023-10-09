@@ -20,6 +20,10 @@
         display: none
 
     &--3
+      display: flex
+      align-items: center
+      justify-content: flex-end
+
       +max-screen($breakpoint-lg)
         flex: 0 1
 
@@ -39,6 +43,7 @@
       object-fit: cover
 
   &__icon
+    +adaptive-value('margin-left', 40, 10, 1)
     display: none
     flex-direction: column
     align-items: flex-end

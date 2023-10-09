@@ -1,0 +1,25 @@
+.lang-switcher
+  display: flex
+  align-items: center
+
+  .pll-switcher-select
+    +adaptive-value('font-size', 26, 16, 1)
+    background-color: $color-light
+    font-family: $font-family-base
+    text-transform: uppercase
+    color: $color-dark
+    cursor: pointer
+    text-align: center
+    +max-screen($breakpoint-xxl)
+      +adaptive-value('font-size', 20, 16, 1)
+    &:hover
+      color: rgba($color-dark, 0.6)
+
+    option
+      transition: 0.2s ease
+      cursor: pointer
+
+      &:hover
+        background-color: $color-grey !important
+        color: $color-light !important
+      
