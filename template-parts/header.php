@@ -37,9 +37,9 @@
 
     <div class="header__col header__col--3">
 
-      <div class="lang-switcher header__lang-switcher">
+      <ul class="lang-switcher header__lang-switcher">
         <?php pll_the_languages(array('dropdown' => 0, 'show_name' => 1)); ?>
-      </div>
+      </ul>
 
       <a href="#" class="header__icon">
         <div></div>
