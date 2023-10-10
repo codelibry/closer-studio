@@ -3,11 +3,14 @@
   $title = get_sub_field('shrink-text-title');
   $excerpt = get_sub_field('shrink-text-excerpt');
   $full = get_sub_field('shrink-text-full');
+
+  // format title as slug to use as section id
+  $section_id = implode('-', explode(' ', strtolower($title)));
 ?>
 
 <?php if ($title and $excerpt and $full): ?>
 
-<section id="shrink-text" class="section shrink-text">
+<section id="<?php echo $section_id ?>" class="section shrink-text">
   <div class="shrink-text__container">
 
     <h2 class="shrink-text__title"><?php echo $title ?></h2>
