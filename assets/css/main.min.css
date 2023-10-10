@@ -171,7 +171,7 @@ p{font-size:calc(16px + 24 * ((100vw - 320px) / 1460))}
 .header__col--2{display:none}
 .header__col--3{-webkit-box-flex:0;-ms-flex:0 1;flex:0 1}
 .header__icon{display:-webkit-box;display:-ms-flexbox;display:flex}
-.hero__image{top:-20%}
+.hero__image{top:-30%}
 }@media only screen and (max-width:767.98px){.field{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 input{max-width:100%}
 }@media only screen and (max-width:479.98px){.footer__flex{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:1.6666666667rem}
