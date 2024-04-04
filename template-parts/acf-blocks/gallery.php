@@ -20,7 +20,18 @@
         <?php $small_image_modificator = $key == $smaller_image_index ? 'gallery__box--small' : ''; ?>
 
         <div class="gallery__box <?php echo $small_image_modificator ?>">
-          <?php image_acf($image);?>
+          <div class="gallery__inner">
+
+            <?php image_acf($image);?>
+
+            <?php if ($image['caption']) : ?>
+              <div class="gallery__caption" style="font-size: 16px; margin-top: 10px;">
+                <?php echo $image['caption']; ?>
+              </div>
+            <?php endif; ?>
+
+          </div>
+
         </div>
 
       <?php endforeach; ?>
